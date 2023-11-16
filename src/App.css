@@ -1,20 +1,5 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
+  background-color: #7393d3;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,15 +9,53 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.balloon-animation {
+    background-color: rgba(0, 255, 255, 0.877);
+    position: relative;
+    height: 100vh;
 }
+
+.flying-cloud {
+    position: absolute;
+    width: 15%;
+}
+
+.flying-cat {
+    position: absolute;
+    width: 20%;
+    right: 50%;
+    top: 10%;
+}
+
+.flying-cloud:nth-child(1) { 
+    left: 20%;
+    top: 15%
+}
+.flying-cloud:nth-child(2) { 
+    right: 30%;
+    top: 30%;
+}
+.flying-cloud:nth-child(3) { 
+    left: 25%;
+    top: 35%;
+    z-index: 1;
+}
+.flying-cloud:nth-child(4) {
+    right: 37%;
+    top: 16%;
+    z-index: 1;
+ }
+.flying-cloud:nth-child(5) {
+    left: 12%;
+ }
+.flying-cloud:nth-child(6) {
+    right: 12%;
+    top: 25%;
+    z-index: 1;
+ }
